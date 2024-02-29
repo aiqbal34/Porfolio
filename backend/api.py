@@ -1,15 +1,17 @@
-import Flask 
-import Flask_cors
-import json
-from json import jsonify
+from flask import Flask, jsonify
+from flask_cors import CORS
+
 
 
 app =  Flask(__name__)
 
-app = CORS(app)
+CORS(app)
 
-app.route('/')
+@app.route('/')
 def hello_world():
     return jsonify({
         'message' : 'Hello World'
     })
+    
+if __name__ == '__main__':
+    app.run(debug=True)

@@ -3,9 +3,9 @@ import Link from "next/link";
 const Navbar = () => {
 
     const listLinkStyling = `ml-20 text-white opacity-50 
-                            hover:opacity-100 ease-in-out relative group`
+                            hover:opacity-100 ease-in-out relative group duration-500 fixed`
     
-    const underLine = <div className="pt-0.5 absolute w-full h-0.5 bg-white/80 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"/>
+    const underLine = <div className="pt-0.5 absolute w-full h-0.5 bg-white/80 scale-x-0 group-hover:scale-x-100 transition-transform origin-left "/>
     
 
     return (
