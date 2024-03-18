@@ -4,7 +4,7 @@ import { ReactTyped } from "react-typed";
 const Title = () => {
 
     return (
-            <div className="items-start">
+            <div className="items-start mt-[-6rem]">
               <h1 className="text-white font-bold text-4xl">Aariz Iqbal</h1>
               <div className="flex flex-none">
                 {/* the is the typewriter effect section */}
