@@ -15,6 +15,5 @@ const Title = () => {
       );   
 };
 
-//   Camera camera("gige://192.168.1.100")
 
 export default Title;
