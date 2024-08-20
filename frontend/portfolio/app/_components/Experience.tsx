@@ -65,8 +65,8 @@ const Experience = ({ experienceRef }) => {
           ))}
         </ul>
         <div className="flex flex-col w-3/4">
-          <p className="text-xl font-semibold text-gray-500 mb-2">{experiences[currentSelectedIndex].name}</p>
-          <p className="text-lg">{experiences[currentSelectedIndex].description}</p>
+          <span className="text-xl font-semibold text-gray-500 mb-2">{experiences[currentSelectedIndex].name}</span>
+          <span className="text-lg">{experiences[currentSelectedIndex].description}</span>
         </div>
       </div>
     </div>
