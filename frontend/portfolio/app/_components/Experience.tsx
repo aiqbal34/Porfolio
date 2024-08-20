@@ -1,7 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { AI_ML_FirmwareEngineerIntern, SoftwareResearchIntern, FullStackDeveloper } from './experienceData';
 
-const Experience = ({ experienceRef }) => {
+interface ExperienceProps {
+  experienceRef: React.RefObject<HTMLDivElement>; // Adjust the HTML element type as needed
+}
+
+
+const Experience: React.FC<ExperienceProps> = ({ experienceRef }) => {
   const [currentSelectedIndex, setCurrentSelectedIndex] = useState(0);
   const [barPosition, setBarPosition] = useState(0);
   const listRef = useRef(null);
