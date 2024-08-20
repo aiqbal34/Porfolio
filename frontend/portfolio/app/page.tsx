@@ -7,6 +7,12 @@ import { useRef } from "react";
 import { TracingBeam } from "./_components/tracing-beam";
 import Experience from "./_components/Experience";
 
+type Item = {
+  title: string,
+  description: string,
+  link: string,
+}
+
 const items = {
   title: "Hello",
   description: "loren Ipsum asl;dkfjasd;lfa;ldjfal;dkjfa;ldkfjal;dkfjadl;\na;dlfkja;djf",

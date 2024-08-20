@@ -9,7 +9,7 @@ const Title = () => {
               <div className="flex flex-none">
                 {/* the is the typewriter effect section */}
                 <h1 className="text-white">i am a&nbsp;</h1> 
-                <ReactTyped strings={["full stack developer", 'mobile developer']} typeSpeed={100} loop backSpeed={30} className="text-white font-semibold"/>
+                <ReactTyped strings={["full stack developer", 'mobile developer', 'firmware engineer']} typeSpeed={100} loop backSpeed={30} className="text-white font-semibold"/>
               </div>
             </div>
       );   
