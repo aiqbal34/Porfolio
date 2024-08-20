@@ -15,12 +15,12 @@ type Item = {
 
 const items = {
   title: "Hello",
-  description: "loren Ipsum asl;dkfjasd;lfa;ldjfal;dkjfa;ldkfjal;dkfjadl;\na;dlfkja;djf",
+  description: "updating",
   link: "https://google.com",
 };
 const items1 = {
   title: "Hello1",
-  description: "loren Ipsum asl;dkfjasd;lfa;ldjfal;dkjfa;ldkfjal;dkfjadl;\na;dlfkja;djf1",
+  description: "updating",
   link: "https://google.com",
 };
 
