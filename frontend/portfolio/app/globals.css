@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.box {
+    width: 300px; /* Fixed width */
+    max-height: 200px; /* Limit the height */
+    background-color: #1e1e2f; /* Background color */
+    padding: 16px; /* Padding around content */
+    overflow-y: auto; /* Allow vertical scrolling for overflowing content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+    font-size: 14px; /* Adjust font size */
+    line-height: 1.5; /* Improve readability */
+}
+
+/* Optional: Style the scrollbar for better aesthetics */
+.box::-webkit-scrollbar {
+    width: 8px;
+}
+
+.box::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.box::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
