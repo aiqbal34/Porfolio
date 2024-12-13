@@ -75,7 +75,7 @@ const Experience: React.FC<ExperienceProps> = ({ experienceRef }) => {
     >
       <div className="w-7/12 pb-3">
         <h1 className="text-4xl font-bold text-gradient mb-6">
-          02. Where I've Worked
+          02. Where I&apos;veve Worked
         </h1>
       </div>
       <div className="flex w-7/12 relative bg-neutral-700 rounded-lg shadow-lg p-4">
