@@ -1,48 +1,59 @@
-import Link from "next/link";
+import React, { RefObject } from "react";
 
-const Navbar = ({projectRef: projectRef, experienceRef: experienceRef} : {
-    projectRef: React.RefObject<HTMLDivElement>
-    experienceRef:  React.RefObject<HTMLDivElement>
-}) => {
+interface NavbarProps {
+    projectRef: RefObject<HTMLDivElement>;
+    skillsRef: RefObject<HTMLDivElement>;
+    experienceRef: RefObject<HTMLDivElement>;
+    contactRef: RefObject<HTMLDivElement>;
+}
 
-    const listLinkStyling = `ml-20 text-white opacity-50 
-                            hover:opacity-100 ease-in-out relative group duration-500 fixed`
-    
-    const underLine = <div className="pt-0.5 absolute w-full h-0.5 bg-white/80 scale-x-0 group-hover:scale-x-100 transition-transform origin-left "/>
-    
-    const projectRefOnClickHandler = () => {
-        console.log("e")
-        projectRef.current?.scrollIntoView({
-            behavior: 'smooth'
-        })
-    }
-    const experienceRefOnClickHanlder = () => {
-        console.log("e")
-        experienceRef.current?.scrollIntoView({
-            behavior: 'smooth'
-        })
-    }
-
+const Navbar = ({ projectRef, skillsRef, experienceRef, contactRef }: NavbarProps) => {
+    const scrollToSection = (ref: RefObject<HTMLDivElement>) => {
+        ref.current?.scrollIntoView({ behavior: "smooth" });
+    };
 
     return (
-
-        <div className="items-end">
-            <ul className=" flex list-none mt-8 justify-end">
-                <li className={listLinkStyling} onClick={projectRefOnClickHandler}>
-                    Projects
-                    {underLine}
+        <nav className="fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-sm">
+            <ul className="flex list-none mt-8 justify-end pr-8">
+                <li className="relative ml-20 group">
+                    <button 
+                        className="text-white opacity-50 hover:opacity-100 transition-opacity duration-300 relative"
+                        onClick={() => scrollToSection(projectRef)}
+                    >
+                        Projects
+                        <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-gray-400 to-gray-300 group-hover:w-full transition-all duration-300 ease-out"></div>
+                    </button>
                 </li>
-                <li className={listLinkStyling} onClick={experienceRefOnClickHanlder}>
-                    Experience
-                    {underLine}
+                <li className="relative ml-20 group">
+                    <button 
+                        className="text-white opacity-50 hover:opacity-100 transition-opacity duration-300 relative"
+                        onClick={() => scrollToSection(skillsRef)}
+                    >
+                        Skills
+                        <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-gray-400 to-gray-300 group-hover:w-full transition-all duration-300 ease-out"></div>
+                    </button>
                 </li>
-                <li className={`${listLinkStyling} mr-14`}>
-                    Contact Me
-                    {underLine}
+                <li className="relative ml-20 group">
+                    <button 
+                        className="text-white opacity-50 hover:opacity-100 transition-opacity duration-300 relative"
+                        onClick={() => scrollToSection(experienceRef)}
+                    >
+                        Experience
+                        <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-gray-400 to-gray-300 group-hover:w-full transition-all duration-300 ease-out"></div>
+                    </button>
                 </li>
-            </ul> 
-        </div>
-    )
-}
+                <li className="relative ml-20 group">
+                    <button 
+                        className="text-white opacity-50 hover:opacity-100 transition-opacity duration-300 relative"
+                        onClick={() => scrollToSection(contactRef)}
+                    >
+                        Contact
+                        <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-gray-400 to-gray-300 group-hover:w-full transition-all duration-300 ease-out"></div>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    );
+};
 
 export default Navbar;

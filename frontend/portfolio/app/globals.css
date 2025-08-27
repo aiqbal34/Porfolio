@@ -2,28 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-.box {
-    width: 300px; /* Fixed width */
-    max-height: 200px; /* Limit the height */
-    background-color: #1e1e2f; /* Background color */
-    padding: 16px; /* Padding around content */
-    overflow-y: auto; /* Allow vertical scrolling for overflowing content */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
-    font-size: 14px; /* Adjust font size */
-    line-height: 1.5; /* Improve readability */
+/* Custom scrollbar styles */
+@layer utilities {
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+  }
 }
 
-/* Optional: Style the scrollbar for better aesthetics */
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom box styles for any overflow content */
+.box {
+    width: 300px;
+    max-height: 200px;
+    background-color: #1f2937;
+    padding: 16px;
+    overflow-y: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
 .box::-webkit-scrollbar {
     width: 8px;
 }
 
 .box::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #4b5563;
     border-radius: 4px;
 }
 
 .box::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #6b7280;
+}
+
+/* Gradient text animation */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-animate {
+  background-size: 200% 200%;
+  animation: gradient 3s ease infinite;
 }
