@@ -41,7 +41,13 @@ const portfolio = {
   link: "https://github.com/aiqbal34/Porfolio",
 };
 
-const itemArr = [DialedIn, GitGud, Scream_Detector, portfolio];
+const Parkly = {
+  title: "Parkly",
+  description: "Parkly is a parking management system that allows users to find parking spots and reserve them",
+  link: "https://www.useparkly.com/",
+}
+
+const itemArr = [DialedIn, GitGud, Scream_Detector, portfolio, Parkly];
 
 export default function Home() {
   const projectRef = useRef<HTMLDivElement>(null);
