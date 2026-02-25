@@ -86,7 +86,7 @@ export default function Home() {
             className="text-center mb-12 relative z-10 px-4"
           >
             <p className="text-xs font-mono text-slate-500 mb-3 tracking-widest uppercase">
-              // selected work
+              {"// selected work"}
             </p>
             <h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent leading-tight">
               Projects

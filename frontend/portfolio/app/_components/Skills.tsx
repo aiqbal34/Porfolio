@@ -50,7 +50,7 @@ const Skills = () => {
           className="text-center mb-16"
         >
           <p className="text-xs font-mono text-slate-500 mb-3 tracking-widest uppercase">
-            // technical stack
+            {"// technical stack"}
           </p>
           <h2 className="text-4xl font-bold text-white">Skills & Technologies</h2>
           <div className="mt-4 h-px w-24 mx-auto bg-gradient-to-r from-transparent via-slate-500 to-transparent" />

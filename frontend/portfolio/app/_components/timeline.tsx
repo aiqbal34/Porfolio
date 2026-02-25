@@ -28,7 +28,7 @@ export function Timeline({ data }: TimelineProps) {
         className="max-w-7xl mx-auto pt-24 pb-14 px-4 md:px-8 lg:px-10"
       >
         <p className="text-xs font-mono text-slate-500 mb-3 tracking-widest uppercase">
-          // professional journey
+          {"// professional journey"}
         </p>
         <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent leading-tight">
           Experience
