@@ -1,26 +1,76 @@
-// Updated experience data with complete resume information
-export const SanDiskIntern = <ul className="list-disc list-inside space-y-2">
-<li>Revamped React-based UI architecture with live FastAPI backend integrations, optimizing state management, event handling, and asynchronous workflows to enable smooth, real-time data synchronization with a PostgreSQL database</li>
-<li>Built and populated staging tables in PostgreSQL, implemented vector-based semantic search, integrated a chatbot with persistent history, and created React UI/UX improvements including pagination, text ordering, and AI output formatting</li>
-<li>Built an API for file uploads that generates embeddings for diverse data types and developed a database API library to support AI orchestration and dynamic data retrieval</li>
-</ul>;
+// Highlighted metric helper
+const M = ({ children }: { children: React.ReactNode }) => (
+  <span className="text-amber-400 font-semibold">{children}</span>
+);
 
-export const AI_ML_FirmwareEngineerIntern = <ul className="list-disc list-inside space-y-2">
-<li>Trained an AI model to generate firmware code, boosting efficiency by 30% and improving accuracy across the process</li>
-<li>Refactored and optimized firmware code in C, improving performance and maintainability reducing CPU cycles by 20%</li>
-<li>Parsed error logs and conducted FA analysis using AI pattern recognition to diagnose and resolve issues</li>
-<li>Designed and implemented test cases to validate firmware improvements, ensuring seamless integration into production</li>
-</ul>;
+export const SanDiskIntern = (
+  <ul className="space-y-3">
+    <li className="flex gap-2.5 items-baseline">
+      <span className="text-amber-500/60 flex-shrink-0 text-xs mt-px">▸</span>
+      <span>Revamped React-based UI architecture with live FastAPI backend integrations, optimizing state management and async workflows for real-time data sync with PostgreSQL</span>
+    </li>
+    <li className="flex gap-2.5 items-baseline">
+      <span className="text-amber-500/60 flex-shrink-0 text-xs mt-px">▸</span>
+      <span>Built staging tables in PostgreSQL, implemented <M>vector-based semantic search</M>, integrated a chatbot with persistent history, and shipped pagination, text ordering, and AI output formatting</span>
+    </li>
+    <li className="flex gap-2.5 items-baseline">
+      <span className="text-amber-500/60 flex-shrink-0 text-xs mt-px">▸</span>
+      <span>Built a file-upload API that generates embeddings for diverse data types and a database API library supporting AI orchestration and dynamic data retrieval</span>
+    </li>
+  </ul>
+);
 
-export const SoftwareResearchIntern = <ul className="list-disc list-inside space-y-2">
-<li>Collaborated with a cross-functional team to enhance an Android app using Kotlin, integrating a plant scanning feature powered by a ML model trained for 50 epochs, achieving 92% accuracy, to provide tailored pesticide recommendations</li>
-<li>Worked with UI/UX designers to improve UI and pushed the app to production on the Google Play store</li>
-<li>Developed a model to control the movement of a hyperspectral camera around a greenhouse, implemented using Arduino for automation and precise control</li>
-</ul>;
+export const AI_ML_FirmwareEngineerIntern = (
+  <ul className="space-y-3">
+    <li className="flex gap-2.5 items-baseline">
+      <span className="text-amber-500/60 flex-shrink-0 text-xs mt-px">▸</span>
+      <span>Trained an AI model to generate firmware code, boosting engineering efficiency by <M>30%</M> and improving output accuracy end-to-end</span>
+    </li>
+    <li className="flex gap-2.5 items-baseline">
+      <span className="text-amber-500/60 flex-shrink-0 text-xs mt-px">▸</span>
+      <span>Refactored and optimized firmware code in C, improving maintainability and reducing CPU cycles by <M>20%</M></span>
+    </li>
+    <li className="flex gap-2.5 items-baseline">
+      <span className="text-amber-500/60 flex-shrink-0 text-xs mt-px">▸</span>
+      <span>Parsed error logs and conducted failure analysis using AI pattern recognition to diagnose and resolve production issues</span>
+    </li>
+    <li className="flex gap-2.5 items-baseline">
+      <span className="text-amber-500/60 flex-shrink-0 text-xs mt-px">▸</span>
+      <span>Designed and implemented test cases to validate firmware improvements, ensuring seamless integration into production builds</span>
+    </li>
+  </ul>
+);
 
-export const FullStackDeveloper = <ul className="list-disc list-inside space-y-2">
-<li>Created APIs via AWS API Gateway to help with the Authentication users to a specific Centralized Exchange via external APIs, and also to send Crypto wallet information from the front-end with AWS Amplify to the AWS hosted back-end</li>
-<li>Created Serverless Functions via AWS Lambda to Authenticate users with Centralized Exchanges, and integrate the wallets to the tax algorithm</li>
-<li>Updated tax algorithm to integrate wallet data with Python using Pandas, and store it with AWS S3</li>
-<li>Used React.js for front-end integration and Python for back-end integration</li>
-</ul>;
+export const SoftwareResearchIntern = (
+  <ul className="space-y-3">
+    <li className="flex gap-2.5 items-baseline">
+      <span className="text-amber-500/60 flex-shrink-0 text-xs mt-px">▸</span>
+      <span>Enhanced an Android app in Kotlin with a plant-scanning feature powered by a ML model trained for <M>50 epochs</M>, achieving <M>92% accuracy</M> for tailored pesticide recommendations</span>
+    </li>
+    <li className="flex gap-2.5 items-baseline">
+      <span className="text-amber-500/60 flex-shrink-0 text-xs mt-px">▸</span>
+      <span>Collaborated with UI/UX designers to improve the interface and shipped the app to production on the <M>Google Play Store</M></span>
+    </li>
+    <li className="flex gap-2.5 items-baseline">
+      <span className="text-amber-500/60 flex-shrink-0 text-xs mt-px">▸</span>
+      <span>Built a motion-control model for a hyperspectral camera in a greenhouse environment, implemented via Arduino for automation and precise positioning</span>
+    </li>
+  </ul>
+);
+
+export const FullStackDeveloper = (
+  <ul className="space-y-3">
+    <li className="flex gap-2.5 items-baseline">
+      <span className="text-amber-500/60 flex-shrink-0 text-xs mt-px">▸</span>
+      <span>Built APIs via <M>AWS API Gateway</M> for authenticating users to Centralized Exchanges and relaying crypto wallet data from a React/Amplify frontend to an AWS-hosted backend</span>
+    </li>
+    <li className="flex gap-2.5 items-baseline">
+      <span className="text-amber-500/60 flex-shrink-0 text-xs mt-px">▸</span>
+      <span>Created serverless functions via <M>AWS Lambda</M> to authenticate users with Centralized Exchanges and integrate wallets into the tax algorithm</span>
+    </li>
+    <li className="flex gap-2.5 items-baseline">
+      <span className="text-amber-500/60 flex-shrink-0 text-xs mt-px">▸</span>
+      <span>Updated the tax algorithm in Python with Pandas to process wallet data and persist results to <M>AWS S3</M></span>
+    </li>
+  </ul>
+);

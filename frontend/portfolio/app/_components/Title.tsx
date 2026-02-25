@@ -46,8 +46,6 @@ const Title = () => {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-white/80 text-lg mb-8"
             >
-                <p>Computer Science Student at UC Davis</p>
-                <p className="text-sm text-white/60">GPA: 3.9 | Expected Graduation: June 2026</p>
             </motion.div>
         </motion.div>
     );   

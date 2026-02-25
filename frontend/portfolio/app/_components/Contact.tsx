@@ -77,7 +77,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-black">
+    <section id="contact" className="py-20 bg-slate-900">
       <div className="container mx-auto px-4">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -114,7 +114,7 @@ const Contact = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-black/50 text-white border-gray-600 backdrop-blur-sm ${errors.name ? 'border-red-500' : 'border-gray-600'}`}
+                className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-slate-800/50 text-white border-gray-600 backdrop-blur-sm ${errors.name ? 'border-red-500' : 'border-gray-600'}`}
                 placeholder="Your name"
               />
               {errors.name && <p className="mt-1 text-sm text-red-400">{errors.name}</p>}
@@ -130,7 +130,7 @@ const Contact = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-black/50 text-white border-gray-600 backdrop-blur-sm ${errors.email ? 'border-red-500' : 'border-gray-600'}`}
+                className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-slate-800/50 text-white border-gray-600 backdrop-blur-sm ${errors.email ? 'border-red-500' : 'border-gray-600'}`}
                 placeholder="your.email@example.com"
               />
               {errors.email && <p className="mt-1 text-sm text-red-400">{errors.email}</p>}
@@ -146,7 +146,7 @@ const Contact = () => {
                 name="subject"
                 value={formData.subject}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-black/50 text-white backdrop-blur-sm"
+                className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-slate-800/50 text-white backdrop-blur-sm"
                 placeholder="Subject of your message"
               />
             </div>
@@ -161,7 +161,7 @@ const Contact = () => {
                 rows={5}
                 value={formData.message}
                 onChange={handleChange}
-                className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-black/50 text-white border-gray-600 backdrop-blur-sm ${errors.message ? 'border-red-500' : 'border-gray-600'}`}
+                className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-slate-800/50 text-white border-gray-600 backdrop-blur-sm ${errors.message ? 'border-red-500' : 'border-gray-600'}`}
                 placeholder="Your message..."
               />
               {errors.message && <p className="mt-1 text-sm text-red-400">{errors.message}</p>}
@@ -171,7 +171,7 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="px-8 py-3 bg-black/40 backdrop-blur-sm border border-gray-600/50 text-white font-medium rounded-lg hover:border-gray-500/70 hover:bg-black/60 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-black transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed transform hover:scale-105"
+                className="px-8 py-3 bg-slate-800/40 backdrop-blur-sm border border-gray-600/50 text-white font-medium rounded-lg hover:border-gray-500/70 hover:bg-slate-800/60 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-black transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed transform hover:scale-105"
               >
                 {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
@@ -183,7 +183,7 @@ const Contact = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="flex flex-col items-center text-center p-6 bg-black/40 rounded-lg border border-gray-700/50 backdrop-blur-sm hover:border-gray-600/70 transition-colors"
+              className="flex flex-col items-center text-center p-6 bg-slate-800/40 rounded-lg border border-gray-700/50 backdrop-blur-sm hover:border-gray-600/70 transition-colors"
             >
               <div className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 flex items-center justify-center mb-3 border border-blue-500/30">
                 <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -200,7 +200,7 @@ const Contact = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="flex flex-col items-center text-center p-6 bg-black/40 rounded-lg border border-gray-700/50 backdrop-blur-sm hover:border-gray-600/70 transition-colors"
+              className="flex flex-col items-center text-center p-6 bg-slate-800/40 rounded-lg border border-gray-700/50 backdrop-blur-sm hover:border-gray-600/70 transition-colors"
             >
               <div className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 flex items-center justify-center mb-3 border border-blue-500/30">
                 <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -217,7 +217,7 @@ const Contact = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="flex flex-col items-center text-center p-6 bg-black/40 rounded-lg border border-gray-700/50 backdrop-blur-sm hover:border-gray-600/70 transition-colors"
+              className="flex flex-col items-center text-center p-6 bg-slate-800/40 rounded-lg border border-gray-700/50 backdrop-blur-sm hover:border-gray-600/70 transition-colors"
             >
               <div className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 flex items-center justify-center mb-3 border border-blue-500/30">
                 <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
